@@ -1,4 +1,4 @@
-/*----------------------------Null----------------------------*/
+/*---------------------------- Null ----------------------------*/
 a,
 a:visited,
 a:hover {
@@ -38,14 +38,14 @@ img {
   height: auto;
 }
 
-/*----------------------------Variables----------------------------*/
+/*---------------------------- Variables ----------------------------*/
 :root {
   --color-text: #434455;
   --color-footer-tx: #f4f4fd;
   --color-h-f: #404bbf;
 }
 
-/*----------------------------Other----------------------------*/
+/*---------------------------- Other ----------------------------*/
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--color-text);
@@ -58,7 +58,7 @@ body {
   margin: 0 auto;
 }
 
-/*----------------------------General class----------------------------*/
+/*---------------------------- General class ----------------------------*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -92,9 +92,18 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.logo {
+  color: #4d5ae5;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
 .btn {
   display: block;
-  color: white;
+  color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -109,7 +118,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*----------------------------Header----------------------------*/
+/*---------------------------- Header ----------------------------*/
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -127,13 +136,6 @@ body {
   align-items: center;
 }
 .header-logo {
-  color: #4d5ae5;
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   margin-right: 76px;
 }
 .header-logo-span {
@@ -148,10 +150,7 @@ body {
 .header-menu-link {
   display: block;
   color: #2e2f42;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   padding: 24px 0;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -194,9 +193,6 @@ body {
 }
 .header-contacts-data {
   color: var(--color-text);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contacts-data:hover,
@@ -204,7 +200,7 @@ body {
   color: var(--color-h-f);
 }
 
-/*---------------------------- Section 1 ----------------------------*/
+/*---------------------------- Hero section 1 ----------------------------*/
 .hero {
   padding: 188px 0;
   max-width: 1440px;
@@ -223,7 +219,6 @@ body {
 }
 .hero-title {
   color: white;
-  text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -238,7 +233,7 @@ body {
   background-color: #404bbf;
 }
 
-/*---------------------------- Section 2 ----------------------------*/
+/*---------------------------- Advantages section 2 ----------------------------*/
 .advantages {
   padding: 120px 0;
 }
@@ -255,12 +250,12 @@ body {
   /* width: calc((100% - 72px) / 4); */
 }
 .advantages-box-icon {
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  background-color: #f4f4fd;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
   height: 112px;
   margin-bottom: 8px;
 }
@@ -272,7 +267,7 @@ body {
 .advantages-text {
 }
 
-/*---------------------------- Section 3 ----------------------------*/
+/*---------------------------- Team section 3 ----------------------------*/
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -309,8 +304,8 @@ body {
 }
 .team-soc-list {
   display: flex;
-  gap: 24px;
   justify-content: center;
+  gap: 24px;
 }
 .team-soc-item {
   width: 40px;
@@ -334,7 +329,7 @@ body {
   fill: #f4f4fd;
 }
 
-/*---------------------------- Section 4----------------------------*/
+/*---------------------------- Portfoliov section 4 ----------------------------*/
 .portfolio {
   padding: 120px 0;
 }
@@ -345,8 +340,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px 24px;
 }
 .portfolio-item {
   /* width: calc((100% - 48px) / 3); */
@@ -403,14 +397,6 @@ body {
   margin-right: 120px;
 }
 .footer-logo {
-  display: inline-block;
-  color: #4d5ae5;
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 .footer-logo-span {
@@ -426,11 +412,7 @@ body {
 }
 .footer-soc-title {
   color: #fff;
-  font-family: Roboto;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .footer-soc-list {
@@ -467,10 +449,7 @@ body {
 }
 .footer-subscribe-title {
   color: #fff;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .footer-subscribe-label {
@@ -497,20 +476,11 @@ body {
   letter-spacing: 0.04em;
 }
 .footer-subscribe-btn {
-  border-radius: 4px;
-  background-color: #4d5ae5;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  min-width: 165px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 165px;
+  height: 40px;
 }
 .footer-subscribe-btn:hover {
   background-color: #404bbf;
@@ -553,15 +523,16 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: #e7e9fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -582,13 +553,11 @@ body {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-title {
   color: #2e2f42;
   text-align: center;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .modal-form {
@@ -596,15 +565,12 @@ body {
 .modal-field {
   margin-bottom: 8px;
 }
-.modal-field-comment {
-  margin-bottom: 16px;
-}
 .modal-label {
+  display: block;
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  display: block;
   margin-bottom: 4px;
 }
 .modal-input-wrap {
@@ -637,6 +603,10 @@ body {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-comment-field {
+  margin-bottom: 16px;
+}
 .modal-comment {
   width: 100%;
   height: 120px;
@@ -661,6 +631,7 @@ body {
 .modal-comment:focus {
   border: 1px solid #4d5ae5;
 }
+
 .modal-cb-wrap {
   display: flex;
   align-items: center;
@@ -705,4 +676,50 @@ body {
 }
 .modal-btn:hover {
   background-color: #404bbf;
+}
+
+/*---------------------------- Adaptive tablet ----------------------------*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  /*---------------------------- Header ----------------------------*/
+
+  /*---------------------------- Hero section 1 ----------------------------*/
+
+  /*---------------------------- Advantages section 2 ----------------------------*/
+
+  /*---------------------------- Team section 3 ----------------------------*/
+
+  /*---------------------------- Portfoliov section 4 ----------------------------*/
+
+  /*---------------------------- Footer ----------------------------*/
+
+  /*---------------------------- Modal window ----------------------------*/
+}
+
+/*---------------------------- Adaptive desktop ----------------------------*/
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  /*---------------------------- Header ----------------------------*/
+
+  /*---------------------------- Hero section 1 ----------------------------*/
+
+  /*---------------------------- Advantages section 2 ----------------------------*/
+
+  /*---------------------------- Team section 3 ----------------------------*/
+
+  /*---------------------------- Portfoliov section 4 ----------------------------*/
+
+  /*---------------------------- Footer ----------------------------*/
+
+  /*---------------------------- Modal window ----------------------------*/
 }
