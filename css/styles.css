@@ -275,7 +275,6 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 72px;
 }
 .team-item {
@@ -335,7 +334,6 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 48px;
 }
 .portfolio-item {
@@ -515,10 +513,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   background-color: #fcfcfc;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -582,7 +580,7 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
-  padding-left: 38px;
+  padding: 0 10px 0 38px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 12px;
   line-height: 1.16;
@@ -640,6 +638,9 @@ body {
 .modal-cb {
 }
 .modal-cb-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
@@ -649,6 +650,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   outline: transparent;
@@ -658,7 +660,7 @@ body {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 .modal-cb:checked + .modal-cb-label .modal-cb-check {
   background-color: #404bbf;
@@ -666,6 +668,9 @@ body {
   fill: #f4f4fd;
 }
 .modal-cb-svg {
+}
+.modal-cb-text {
+  display: block;
 }
 .modal-cb-link {
   color: #4d5ae5;
@@ -684,7 +689,27 @@ body {
   .container {
     max-width: 768px;
   }
-
+  .title {
+    color: #2e2f42;
+    font-size: 36px;
+    text-transform: capitalize;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  .subtitle {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+  }
   /*---------------------------- Header ----------------------------*/
 
   /*---------------------------- Hero section 1 ----------------------------*/
@@ -713,6 +738,7 @@ body {
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
+
   /*---------------------------- Footer ----------------------------*/
   .footer > .container {
     max-width: 528px;
@@ -742,6 +768,14 @@ body {
     width: 264px;
   }
   /*---------------------------- Modal window ----------------------------*/
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 25px 24px 23px;
+  }
+  .modal-title {
+    font-weight: 500;
+  }
 }
 
 /*---------------------------- Adaptive desktop ----------------------------*/
@@ -750,27 +784,7 @@ body {
     max-width: 1158px;
     padding: 0 15px;
   }
-  .title {
-    color: #2e2f42;
-    font-size: 36px;
-    text-transform: capitalize;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-  }
-  .subtitle {
-    color: #2e2f42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-  }
-  .text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-weight: 400;
-  }
+
   /*---------------------------- Header ----------------------------*/
 
   /*---------------------------- Hero section 1 ----------------------------*/
@@ -815,7 +829,7 @@ body {
   .portfolio-item {
     width: calc((100% - 48px) / 3);
   }
-  /*!---------------------------- Footer ----------------------------*/
+  /*---------------------------- Footer ----------------------------*/
   .footer > .container {
     max-width: 1158px;
   }
@@ -844,4 +858,7 @@ body {
     gap: 24px;
   }
   /*---------------------------- Modal window ----------------------------*/
+  .modal {
+    padding: 72px 24px 24px 24px;
+  }
 }
