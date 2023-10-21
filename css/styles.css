@@ -289,6 +289,7 @@ body {
 }
 .team-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 72px;
 }
@@ -401,6 +402,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: baseline;
   gap: 72px 24px;
 }
 .footer-content {
@@ -704,27 +706,6 @@ body {
   .container {
     max-width: 768px;
   }
-  /* .title {
-    color: #2e2f42;
-    font-size: 36px;
-    text-transform: capitalize;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-  }
-  .subtitle {
-    color: #2e2f42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-  }
-  .text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-weight: 400;
-  } */
 
   /*---------------------------- Header ----------------------------*/
 
@@ -771,11 +752,15 @@ body {
   }
 
   /*---------------------------- Team section 3 ----------------------------*/
+  .team > .container {
+    max-width: 552px;
+    padding: 0;
+  }
   .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 64px 24px;
+  }
+  .team-item {
+    width: calc((100% - 24px) / 2);
   }
 
   /*---------------------------- Portfoliov section 4 ----------------------------*/
@@ -788,7 +773,8 @@ body {
 
   /*---------------------------- Footer ----------------------------*/
   .footer > .container {
-    max-width: 528px;
+    max-width: 552px;
+    padding: 0;
   }
   .footer-container {
     justify-content: start;
@@ -820,9 +806,6 @@ body {
     width: 408px;
     min-height: 584px;
     padding: 72px 25px 24px 23px;
-  }
-  .modal-title {
-    font-weight: 500;
   }
 }
 
@@ -883,7 +866,6 @@ body {
     margin-bottom: 8px;
   }
   .advantages-subtitle {
-    text-align: start;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -893,6 +875,10 @@ body {
   }
 
   /*---------------------------- Team section 3 ----------------------------*/
+  .team > .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
   .team {
     padding: 120px 0;
   }
@@ -917,13 +903,14 @@ body {
   /*---------------------------- Footer ----------------------------*/
   .footer > .container {
     max-width: 1158px;
+    padding: 0 15px;
   }
   .footer {
     padding: 100px 0;
   }
   .footer-container {
     gap: 0;
-    align-items: baseline;
+    justify-content: center;
   }
   .footer-logo {
     margin-bottom: 16px;
@@ -931,16 +918,9 @@ body {
   .footer-content {
     margin-right: 120px;
   }
-  .footer-text {
-    max-width: 264px;
-  }
 
   .footer-soc {
     margin-right: 80px;
-  }
-
-  .footer-subscribe-form {
-    gap: 24px;
   }
 
   /*---------------------------- Modal window ----------------------------*/
