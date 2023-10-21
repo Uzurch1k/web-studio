@@ -91,6 +91,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-weight: 400;
 }
 .logo {
   color: #4d5ae5;
@@ -202,29 +203,43 @@ body {
 
 /*---------------------------- Hero section 1 ----------------------------*/
 .hero {
-  padding: 188px 0;
-  max-width: 1440px;
+  padding: 72px 0;
+  max-width: 320px;
   margin: 0 auto;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg/Dark-bg.jpg);
+    url(../images/bg/mob/Dark-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg/mob/Dark-bg-mob-2x.jpg);
+  }
+}
+
 .hero-container {
 }
 .hero-title {
   color: white;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  max-width: 496px;
-  margin: 0 auto 48px auto;
+  text-transform: capitalize;
+  max-width: 200px;
+  margin: 0 auto 72px auto;
 }
 .hero-btn {
   margin: 0 auto;
@@ -689,7 +704,7 @@ body {
   .container {
     max-width: 768px;
   }
-  .title {
+  /* .title {
     color: #2e2f42;
     font-size: 36px;
     text-transform: capitalize;
@@ -709,10 +724,40 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 400;
-  }
+  } */
+
   /*---------------------------- Header ----------------------------*/
 
   /*---------------------------- Hero section 1 ----------------------------*/
+  .hero {
+    padding: 112px 0;
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg/tab/Dark-bg-tab.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg/tab/Dark-bg-tab-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+    max-width: 496px;
+    margin: 0 auto 36px auto;
+  }
 
   /*---------------------------- Advantages section 2 ----------------------------*/
   .advantages-list {
@@ -724,6 +769,7 @@ body {
   .advantages-subtitle {
     text-align: start;
   }
+
   /*---------------------------- Team section 3 ----------------------------*/
   .team-list {
     display: flex;
@@ -731,6 +777,7 @@ body {
     justify-content: center;
     gap: 64px 24px;
   }
+
   /*---------------------------- Portfoliov section 4 ----------------------------*/
   .portfolio-list {
     gap: 64px 24px;
@@ -767,6 +814,7 @@ body {
   .footer-subscribe-input {
     width: 264px;
   }
+
   /*---------------------------- Modal window ----------------------------*/
   .modal {
     width: 408px;
@@ -788,6 +836,31 @@ body {
   /*---------------------------- Header ----------------------------*/
 
   /*---------------------------- Hero section 1 ----------------------------*/
+  .hero {
+    padding: 188px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg/bg/Dark-bg.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg/Dark-bg-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    margin: 0 auto 48px auto;
+  }
 
   /*---------------------------- Advantages section 2 ----------------------------*/
   .advantages {
@@ -809,6 +882,10 @@ body {
     height: 112px;
     margin-bottom: 8px;
   }
+  .advantages-text {
+    font-weight: 400;
+  }
+
   /*---------------------------- Team section 3 ----------------------------*/
   .team {
     padding: 120px 0;
@@ -819,6 +896,7 @@ body {
   .team-item {
     width: calc((100% - 72px) / 4);
   }
+
   /*---------------------------- Portfoliov section 4 ----------------------------*/
   .portfolio {
     padding: 120px 0;
@@ -829,6 +907,7 @@ body {
   .portfolio-item {
     width: calc((100% - 48px) / 3);
   }
+
   /*---------------------------- Footer ----------------------------*/
   .footer > .container {
     max-width: 1158px;
@@ -857,6 +936,7 @@ body {
   .footer-subscribe-form {
     gap: 24px;
   }
+
   /*---------------------------- Modal window ----------------------------*/
   .modal {
     padding: 72px 24px 24px 24px;
