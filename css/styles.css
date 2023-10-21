@@ -843,7 +843,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg/bg/Dark-bg.jpg);
+      url(../images/bg/Dark-bg.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -881,6 +881,12 @@ body {
     background-color: #f4f4fd;
     height: 112px;
     margin-bottom: 8px;
+  }
+  .advantages-subtitle {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
   }
   .advantages-text {
     font-weight: 400;
