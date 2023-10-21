@@ -825,7 +825,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg/Dark-bg.jpg);
+      url(../images/bg/dec/Dark-bg-dec.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -836,7 +836,7 @@ body {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/bg/Dark-bg-2x.jpg);
+        url(../images/bg/dec/Dark-bg-dec-2x.jpg);
     }
   }
 
