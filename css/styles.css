@@ -211,7 +211,7 @@ body {
   top: 0;
   transform: rotate(90deg);
 }
-
+/*--------------------------------------------------------*/
 .mob-menu {
   position: fixed;
   top: 0;
@@ -256,7 +256,7 @@ body {
 .mob-menu-link:focus {
   color: var(--color-h-f);
 }
-
+/*--------------------------------------------------------*/
 .mob-contacts {
   margin-bottom: 48px;
 }
