@@ -125,7 +125,6 @@ body {
 
 /*---------------------------- Header ----------------------------*/
 .header {
-  position: relative;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -164,9 +163,7 @@ body {
 }
 
 .header-menu-btn {
-  position: fixed;
-  right: 50%;
-  transform: translateX(800%);
+  position: relative;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -174,34 +171,42 @@ body {
   height: 20px;
   cursor: pointer;
 }
-.header-menu-btn > span,
-.header-menu-btn > span::before,
-.header-menu-btn > span::after {
+.header-menu-btn span,
+.header-menu-btn span::before,
+.header-menu-btn span::after {
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 2.5px;
   background-color: #2f2f37;
   border-radius: 5px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-menu-btn > span::before {
+.header-menu-btn span::before {
   content: '';
   top: -8px;
 }
-.header-menu-btn > span::after {
+.header-menu-btn span::after {
   content: '';
   top: 8px;
 }
 
+.header-menu-btn.active {
+  position: fixed;
+  right: 50%;
+  transform: translateX(723%);
+}
 .header-menu-btn.active span {
+  height: 2px;
   transform: rotate(45deg);
 }
 .header-menu-btn.active span::before {
+  height: 2px;
   top: 0;
   transform: rotate(0);
 }
 .header-menu-btn.active span::after {
+  height: 2px;
   top: 0;
   transform: rotate(90deg);
 }
@@ -274,7 +279,7 @@ body {
 }
 
 .mob-current {
-  color: #404bbf;
+  color: var(--color-h-f);
 }
 
 .mob-soc-list {
@@ -299,7 +304,7 @@ body {
 }
 .mob-soc-link:hover,
 .mob-soc-link:focus {
-  background-color: #404bbf;
+  background-color: var(--color-h-f);
 }
 .mob-soc-icon {
   fill: #f4f4fd;
@@ -350,7 +355,7 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--color-h-f);
 }
 
 /*---------------------------- Advantages section 2 ----------------------------*/
@@ -437,7 +442,7 @@ body {
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
-  background-color: #404bbf;
+  background-color: var(--color-h-f);
 }
 .team-soc-icon {
   fill: #f4f4fd;
@@ -601,7 +606,7 @@ body {
   margin: 0 auto;
 }
 .footer-subscribe-btn:hover {
-  background-color: #404bbf;
+  background-color: var(--color-h-f);
 }
 .footer-subscribe-send {
   margin-left: 16px;
@@ -660,7 +665,7 @@ body {
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--color-h-f);
   border: none;
 }
 .modal-close-btn:hover .modal-close,
@@ -780,7 +785,6 @@ body {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
-  /* margin-right: 8px; */
 }
 .modal-cb:checked + .modal-cb-label .modal-cb-check {
   background-color: #404bbf;
@@ -801,7 +805,7 @@ body {
   margin: 0 auto;
 }
 .modal-btn:hover {
-  background-color: #404bbf;
+  background-color: var(--color-h-f);
 }
 
 /*---------------------------- Adaptive tablet ----------------------------*/
