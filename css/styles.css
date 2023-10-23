@@ -161,7 +161,7 @@ body {
 }
 .header-contacts-data {
 }
-
+/*--------------------------------------------------------*/
 .header-menu-btn {
   position: relative;
   z-index: 10;
@@ -256,7 +256,7 @@ body {
 .mob-menu-link:focus {
   color: var(--color-h-f);
 }
-/*--------------------------------------------------------*/
+
 .mob-contacts {
   margin-bottom: 48px;
 }
@@ -628,7 +628,7 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
-.open-backdrop {
+.backdrop.active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
