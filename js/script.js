@@ -14,7 +14,6 @@ modalBtn.addEventListener('click', function () {
   modalBtn.classList.toggle('active');
   modal.classList.toggle('active');
 });
-
 modalBtnClose.addEventListener('click', function () {
   modalBtnClose.classList.toggle('active');
   modal.classList.toggle('active');
