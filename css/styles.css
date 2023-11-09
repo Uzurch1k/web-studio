@@ -50,7 +50,13 @@ img {
 }
 
 /*---------------------------- Other ----------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
   color: var(--color-text);
   background-color: #ffffff;
@@ -125,10 +131,20 @@ body {
 
 /*---------------------------- Header ----------------------------*/
 .header {
+  background-color: #ffffff;
+}
+.header-wrap {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  background-color: inherit;
+  /* position: fixed;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  z-index: 100; */
 }
 .header-container {
   display: flex;
@@ -399,6 +415,7 @@ body {
 }
 .team-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 72px;
 }
